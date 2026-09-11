@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repo Pulse</title>
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--mut:#8b949e;--acc:#a371f7;--card:#161b22;--bd:#30363d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:760px;margin:0 auto;padding:56px 20px}
+h1{font-size:2.4rem;margin:0}h1 span{color:var(--acc)}h2{margin-top:2.2rem;font-size:1.25rem}
+p,li{color:var(--mut)}code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:16px;overflow-x:auto;color:var(--fg)}
+a{color:var(--acc)}footer{margin-top:3rem;border-top:1px solid var(--bd);padding-top:1rem;font-size:.9rem;color:var(--mut)}
+</style>
+</head>
+<body>
+<main>
+<h1>Repo <span>Pulse</span></h1>
+<p>Integração com a GitHub REST API que resume a saúde dos repositórios de um usuário: linguagem, estrelas, forks, issues abertas e atividade recente.</p>
+
+<h2>Instalação e uso</h2>
+<pre>git clone https://github.com/rodrigoscharp/repo-pulse
+cd repo-pulse
+GITHUB_TOKEN=seu_token node index.js rodrigoscharp</pre>
+<p>Requer Node 18+. O token é opcional e só aumenta o limite de requisições.</p>
+
+<h2>O que ele mostra</h2>
+<ul>
+<li>Tabela com os repositórios (sem forks), ordenados pelo push mais recente</li>
+<li>Total de estrelas</li>
+<li>Quantos repositórios tiveram atividade nos últimos 30 dias</li>
+</ul>
+
+<h2>Suporte</h2>
+<p>Abra uma <a href="https://github.com/rodrigoscharp/repo-pulse/issues">issue</a>.</p>
+
+<footer>Repo Pulse · por <a href="https://github.com/rodrigoscharp">Rodrigo Scharp</a> · MIT</footer>
+</main>
+</body>
+</html>
